@@ -11,7 +11,7 @@ import { createCategoriestSchema } from '../schemas/categories.schemas'
 
 const  categoriesRoutes = Router()
 
-categoriesRoutes.post('',ensureCategoriesExistsMiddleware, createCategoryController)
+categoriesRoutes.post('',ensureCategoriessMiddleware(createCategoriestSchema),ensureCategoriesExistsMiddleware, createCategoryController)
 categoriesRoutes.get('', getCategoryController)
 categoriesRoutes.get('/:id',categoryNoexistent, getCategoryByIdController)
 categoriesRoutes.patch('/:id',categoryNoexistent, updateCategoryByIdController)
