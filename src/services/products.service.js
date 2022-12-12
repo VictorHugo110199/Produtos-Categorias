@@ -50,6 +50,5 @@ export const getProductsAndCategoryByIdService = async (id) => {
             ON categories.id = products.category_id
             WHERE products.category_id = $1;
         `, [id])
-        console.log(queryResponse.rows)
-    return [200, queryResponse.rows[0]]
+    return [200, queryResponse.rows]
 }

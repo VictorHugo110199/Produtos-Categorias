@@ -16,7 +16,7 @@ export const ensureProductsMiddleware =
     }
 };
 
-export const productNoexistent = async (req, res, next) => {
+export const ensureProductNoexists = async (req, res, next) => {
   try {
     const queryResponse = await database.query(
       `

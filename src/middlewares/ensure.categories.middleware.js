@@ -26,7 +26,7 @@ export const ensureCategoriesExistsMiddleware = async (req, res, next) => {
     next()
 }
 
-export const categoryNoexistent = async (req, res, next) => {
+export const ensureCategoryNoexists = async (req, res, next) => {
     try {
       const queryResponse = await database.query(
         `
