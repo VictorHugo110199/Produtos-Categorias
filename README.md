@@ -14,6 +14,8 @@ Visão geral do projeto, um pouco das tecnologias usadas.
 - Jsonwebtoken
 - Bcryptjs
 - Dotenv
+- Yup
+- Express-async-errors
 
 Para inciar este projeto, é necessário instalar as dependências, que serão utilizadas nos testes. Portanto utilize o comando abaixo para instalar tais dependências:
 
